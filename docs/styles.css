@@ -1,0 +1,311 @@
+ *{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -wbe
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+  }
+
+.header {
+    background-color: black;
+    vertical-align: middle;
+    height: 45px;
+    padding: 5px 10px 5xp 10px;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.navbar {
+    background: transparent; 
+    background-attachment: fixed;
+    position: fixed;
+    text-decoration: none;
+    z-index: 2;
+    color: cornsilk;
+
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Acme;
+    font-weight: 550;
+    color: whitesmoke;
+    opacity: 0.7;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Acme;
+    font-weight: 550;
+    color: whitesmoke;
+    opacity: 1;
+}
+
+.navbar li {
+    display: inline;
+    padding: 5px 15px 5px 15px;
+    float:right;
+    font-weight: 500;
+    margin: 0;
+    border: 5px 5px 5px 5px;
+    border-radius: 2px;
+
+    
+}
+
+.header a {
+    background-color: none;
+    color: rgb(250, 246, 229);
+    float: right;
+    display: block;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    margin: 8px 20px 10px 20px;
+}
+
+.header a:hover {
+    color:skyblue;
+    transition: 0.2s ease;
+}
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("images/bg.jpg");
+  
+    /* Set a specific height */
+    min-height: 750px;
+  
+    /* Create the parallax scrolling effect */
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.footer {
+    background-color: black;
+    vertical-align: middle;
+    height: 50px;
+}
+
+.nav-icon {
+    margin: 1px;
+    width: 25px;
+    opacity: 0.7;
+}
+
+.nav-icon:hover {
+    margin: 1px;
+    width: 25px;
+    opacity: 1;
+}
+  
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 4px;
+    margin: 5px 0;
+    transition: all .2s ease-in-out;
+}
+
+.nav-icon:hover:before {
+    transform: translateY(9px) ;
+}
+  
+.nav-icon:hover:after {
+    transform: translateY(-9px) ;
+}
+  
+.nav-icon:hover div {
+    transform: scale(0);
+}
+
+.head {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    background-clip: text;
+}
+
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: #ccc;
+    top: 0;
+
+}
+  
+.progress-bar {
+    height: 6px;
+    background: linear-gradient(to right, #30E8BF, #FF8235); 
+    transition: ease-in-out;
+    top: 0;
+    border-radius: 5px;
+
+}
+
+.head p:nth-child(1) {
+    font-size: 80px;
+    font-weight:600;
+    font-family: Patua One;
+    color: black;
+    display: block;
+    text-shadow: 2.5px 2.5px 0px rgb(212, 212, 65),
+                5px 5px 0px rgb(207, 90, 36),
+                7.5px 7.5px 0px skyblue;
+}
+
+.head p:nth-child(2) {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Alegreya;
+    color: black;
+    display: block;
+    margin-top: 10px;
+
+}
+
+.head p:nth-child(3) {
+    font-size: 50px;
+    font-weight: 650;
+    font-family: Alegreya;
+    color: black;
+    display: block;
+    margin-top: 10px;
+
+}
+
+
+.icon ul {
+    list-style-type: none;
+    margin-top: 80px;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+.icon li {
+    float: left;
+    padding: 5px 190px 5px 190px ;
+    list-style-type: none;
+}
+
+.icon p {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Alegreya;
+    color: black;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.carousel {
+    background-image: url(images/carousel2.jpg);
+    min-height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel span {
+    font-size: 45px;
+    text-align: center;
+    font-family: Suez One;
+    color: purple;
+    font-weight: 350;
+}
+
+.about {
+    background-image: url(images/about.jpg);
+    min-height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about span {
+    font-family: Rancho;
+    font-size: 50px;
+    color: darkblue;
+    font-weight: 600;
+    margin: 25px 10px 10px 10px;
+}
+
+.about p {
+    font-size: 30px;
+    font-family: Antic Slab;
+    color: black;
+    font-weight: 600;
+    padding: 40px 100px 20px 100px;
+    line-height: 40px;
+}
+
+.polaroid {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+.container {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+.about  ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+.about li {
+    float: left;
+    padding: 5px 0px 5px 80px ;
+    margin: 10px 20px 10px 20px;
+    list-style-type: none;
+}
+
+.about p {
+    margin: 10px 0px 10px 0px;
+    word-wrap: normal;
+}
+
+.polaroid:hover {
+    transform: scale(1.2);
+    transition-property: ease;
+    transition: 0.3s ease;
+}
+
+
+.carousel-inner img {
+    width: 60%;
+    height: 60%;
+    margin-top: 80px;
+}
